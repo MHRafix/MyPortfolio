@@ -1,0 +1,609 @@
+/*GOOGLE POPPINS FONTS CDN INCLUDE HERE*/
+/*POPPINS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/*LOBSTER*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*UBUNTU*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/*SITE COMMON CSS STARTS FROM HERE*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --green: #27ae60;
+    --text-color: #27ae51;
+    --light-color: #777;
+    --bg-color: #080808;
+    --border: .1rem solid rgba(0,0,0,.2);
+    --box-shadow: .4rem .4rem 1rem #000,
+                -.4rem -.4rem 1rem #000;
+    --box-shadow-inset: .4rem .4rem 1rem #000 inset,
+                      -.4rem -.4rem 1rem #000 inset;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--green);
+    border-radius: 5rem;
+}
+
+
+
+/*HOME SECTION CSS STARTS FROM HERE*/
+.navBar{
+    list-style: none;
+    display: none;
+}
+.icons {
+    text-align: right;
+}
+i#menu-bars {
+    color: var(--text-color);
+    font-size: 35px;
+    background: var(--bg-color);
+    padding: 10px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-inset);
+    border-radius: 40px;
+    position: fixed;
+    top: 10px;
+    animation: pulse 3s infinite;
+    z-index: 11;
+}
+   
+@keyframes pulse {
+ 0% {
+    transform: scale(0.70);
+    box-shadow: 0 0 0 0 #27ae5152;
+ }
+
+ 50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px #27ae5152;
+    color: white;
+}
+
+100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px #27ae5152;
+
+}
+
+100% {
+    transform: scale(0.70);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+ }
+}
+
+#WhatsAppInfoHide,#skypeInfoHide {
+    margin-left: 97%;
+    font-size: 2.5rem;
+    color: crimson;
+    text-decoration: none;
+    cursor: pointer;
+}
+section#homeSection {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#000000d9, #000000d9),url(../images/banner/backgroundBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.detail {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.indentity {
+    overflow: hidden;
+    margin-top: 20%;
+    height: 260px;
+}
+
+span#title{
+    color: var(--green);
+    } 
+    h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0px;
+
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+span.titlePost {
+    color: var(--green);
+    font-weight: 600;
+}
+.typed-cursor{
+    color: var(--green);
+}
+.hireBtn{
+    color: white;
+    padding: 8px 25px;
+    border:  1px solid var(--green);
+    text-decoration: none;
+    transition: .3s;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.themePera{
+    color: var(--light-color);
+    width: 100%;
+}
+#themePera{
+    width: 50%;
+}
+.hireBtn:hover{
+    color: var(--green);
+}
+
+.socialIcons{
+    overflow: hidden;
+}
+.share {
+    display: grid;
+    right: 0px;
+    position: fixed;
+    margin: -165px 0px;
+    background: var(--bg-color);
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 50%;
+    z-index: 10;
+}
+ .share a,#WhatsAppInfo,#skypeAppInfo{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    box-shadow: var(--box-shadow);
+    margin: .4rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    border-radius: .4rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.whatsAppModalStyle#whatsAppModal{
+    display: none;
+    right: 63px;
+    position: fixed;
+    margin: -45px 0px;
+    background: var(--bg-color);
+    padding: 8px 20px 20px 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    top: 50%;
+    z-index: 10;
+}
+#skypeModal{
+    display: none;
+    right: 63px;
+    position: fixed;
+    margin: 52px 0px;
+    background: var(--bg-color);
+    padding: 8px 20px 20px 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    top: 50%;
+    z-index: 10;
+}
+.hireBtn2{
+
+    color: white;
+    border: 1px solid var(--green);
+    text-decoration: none;
+    transition: .3s;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-inset);
+
+}
+.whatsAppDet{
+    color: var(--text-color);
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.phNo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+.share a:hover{
+
+    box-shadow: var(--box-shadow-inset);
+    animation: pop 0.3s linear 1;
+}  
+.share #WhatsAppInfo:hover{
+  box-shadow: var(--box-shadow-inset);
+  animation: pop 0.3s linear 1;
+}
+.share #skypeAppInfo:hover{
+
+  box-shadow: var(--box-shadow-inset);
+  animation: pop 0.3s linear 1;
+
+}
+
+@keyframes pop{
+  50%  {
+
+    transform: scale(1.2);}
+}
+/*HOME SECTION CSS ENDS TO HERE*/
+
+
+/*ABOUT SECTION CSS STARTS FROM HERE*/
+
+.aboutSection{
+    background: var(--bg-color);
+    padding: 50px 0px;
+    margin-top: -1px;
+}
+
+.aboutSection .sectionTitle{
+
+    text-align: center;
+    font-size: 45px;
+}
+.aboutSection .sectionTitle #Sectitle{
+    color: var(--text-color);
+}
+.imgbordered{
+    border: 10px solid var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    /*height: 300px;*/
+}
+#hover{
+    box-shadow: var(--box-shadow-inset);
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    margin: .4rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    border-radius: .4rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.imgbordered img{
+    width: 100%;
+    height: 100%;
+}
+
+h2.peopleName{
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+/*SKILL AREA MARKUP SARTS FROM HERE*/
+.skill-bar {
+    height: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    position: relative;
+}
+.prog {
+    background-color: var(--text-color);
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item h2.skill-name {
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+}
+span.percentage {
+    position: absolute;
+    top: -32px;
+    right: -25px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}span.percentage2 {
+    position: absolute;
+    top: -32px;
+    right: 157px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.skill-type {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+/*SKILL AREA MARKUP ENDS TO HERE*/
+
+/*ABOUT SECTION CSS ENDS TO HERE*/
+
+/*SERVICES  SECTION CSS STARTS FROM HERE*/
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.services .box-container .box{
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+}
+
+.services .box-container .box i{
+    font-size:4rem;
+    padding-bottom: 5rem;
+    color:#fff;
+}
+
+.services .box-container .box h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.services .box-container .box p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
+.services .box-container .box::before{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    z-index: -1;
+    clip-path: circle(9rem at 5% 0%);
+    transition: .3s linear;
+}
+
+.services .box-container .box:hover::before{    
+    clip-path: circle(100%);
+}
+
+.services .box-container .box:hover > *{
+    color:#fff;
+}
+
+/*SERVICES  SECTION CSS ENDS TO HERE*/
+
+/*PORTFOLIO SECTION CSS STARTS FROM HERE*/
+
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.portfolio .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:1rem solid transparent;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    place-items: center;
+    transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    /*color:var(--black);*/
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+#displayPorfolioModal{
+    cursor: pointer;
+}
+
+/*PORTFOLIO MODAL SECTION CSS STARTS FROM HERE*/
+ .aboutSection {
+    background: var(--bg-color);
+    padding: 50px 0px;
+    margin-top: -1px;
+}
+/*PORTFOLIO MODAL SECTION CSS ENDS TO HERE*/
+
+/*PORTFOLIO SECTION CSS ENDS TO HERE*/
+
+
+
+/*REVIEW SECTION CSS STARTS FROM HERE*/
+  
+/*REVIEW SECTION CSS ENDS TO HERE*/
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE CSS STARTS FROM HERE*/
+
+/*ABOUT SECTION RESPONSIVE CSS STARTS FROM HERE*/
+@media only screen and (max-width: 320px) {
+    section#homeSection {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#000000b8, #000000b8),url(../images/banner/backgroundBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    i#menu-bars {
+    color: var(--text-color);
+    font-size: 25px;
+    background: var(--bg-color);
+    padding: 10px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-inset);
+    border-radius: 40px;
+ 
+}
+
+.icons {
+    text-align: right;
+    overflow: hidden;
+    position: fixed;
+    top: -7px;
+    /* box-shadow: var(--box-shadow); */
+    right: 9px;
+    padding: 5px 6px;
+    z-index: 15;
+    background: var(--bg-color);
+}
+  .share {
+    display: inline;
+    position: fixed;
+    background: var(--bg-color);
+    padding: 10px 7px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0px;
+    top: 0%;
+    right: 20%;
+    z-index: 11;
+}
+.share a {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    box-shadow: var(--box-shadow);
+    margin: .4rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    border-radius: .4rem;
+    text-decoration: none;
+}
+.detail {
+    width: 100%;
+    overflow: hidden;
+    /* height: 500px; */
+    margin: auto;
+    text-align: center;
+}
+.indentity {
+    overflow: hidden;
+    margin-top: 40%;
+    height: 260px;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0px;
+}
+h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.themePera {
+    color: var(--light-color);
+    width: 100%;
+    margin: 0px;
+}
+#themePera {
+    color: var(--light-color);
+    width: 90%;
+    margin: 0px;
+}
+
+}
+/*ABOUT SECTION RESPONSIVE CSS ENDS TO HERE*/
+/*RESPONSIVE CSS ENDS TO HERE
