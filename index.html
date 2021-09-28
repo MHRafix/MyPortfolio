@@ -8,10 +8,13 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<!-- TYPED ANIMATION JS CDN LINK UP HERE -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <!-- FONTAWESOME CDN INCLUDE HERE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- FONTAWESOME CDN INCLUDE HERE -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- CUSTOM CSS LINK UP HERE  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
@@ -20,48 +23,12 @@
  
  <!-- HOME SECTION MARKUP STARTS FROM HERE -->
   <section id="homeSection"> 
-    <header>
-        <div class="container">
-            <div class="icons">
-                <i class="fas fa-bars" id="menu-bars">
-            </i>
-          </div>
-        </div>
-
-         <div class="row">
-           <div class="col-lg-10 col-md-10 col-xs-8 col-xs-10">
-             <nav id="menuDiv" class="navbar">
-               <ul class="navBar">
-
-                  <li>
-                   <a class="nav-link active" href="#homeSection">Home</a>
-                  </li>
-
-                  <li>
-                   <a class="nav-link" href="#aboutSection">About</a>
-                  </li>
-
-                  <li>
-                   <a class="nav-link" href="#servicesSection">Services</a>
-                  </li>
-
-                  <li>
-                   <a class="nav-link" href="#portfolioSection">Portfolio</a>
-                  </li>
-
-                  <li>
-                   <a class="nav-link" href="#contactSection">Contact</a>
-                  </li>
-
-                </ul> 
-              </nav>                  
-            </div>    
-           </div>
-        </header>
- 
+    
 
     <div class="socialIcons">
        <div class="share">
+        <a class="fas fa-bars" id="menu-bars">
+            </a>
             <a href="https://www.facebook.com/profile.php?id=100069940274273" target="blank" class="fab fa-facebook-f"></a>
             <a href="https://www.linkedin.com/in/mh-rafix-42772a21b/" target="blank" class="fab fa-linkedin"></a>
             <div id="whatsAppModal" class="whatsAppModalStyle">
@@ -93,6 +60,9 @@
             <a href="https://www.facebook.com" target="blank" class="fab fa-twitter"></a>
         </div>
     </div>
+
+                
+          
         <div class="container">
           <div class="detail">
            <div class="indentity">
@@ -125,9 +95,9 @@
            				<p class="themePera mb-5">
                             My area of expertise is Full-Stack Web Application Development. I have been in this field for one year and have a great deal of knowledge and skills. I have developed websites using PHP, WordPress, as well as MERN stack coding. As a PHP, WordPress and MERN expert, I've already completed over fifty projects for local clients and practice purposes. I live by the motto "Today Learner, Tomorrow Leader" and try to stay abreast of new technology, new lessons, and new languages every single day. I can make any website related to my skills. If you want to make a website, whether it be for your business or for your own needs. If you give me your project, you can be sure that I will deliver high-quality work. Check out my portfolio to build trust. You can find me on Fiverr and Freelancer, as well as contact me directly via social media and email. Thanks!
                         </p>
-           				<a href="https://fiverr.com/mhrafix" target="blank" class="hireBtn mx-2">Go Fiverr</a>
-           				<a href="https://goolgedrive.com/mhrafix" target="blank" class="hireBtn mx-2">Download CV</a>
-           				<a href="https://freelancer.com/mhrafix" target="blank" class="hireBtn mx-2">Freelancer.com</a>
+           				<a href="https://fiverr.com/mhrafix" target="blank" class="hireBtn5 mx-2">Go Fiverr</a>
+           				<a href="https://goolgedrive.com/mhrafix" target="blank" class="hireBtn5 mx-2">Download CV</a>
+           				<a href="https://freelancer.com/mhrafix" target="blank" class="hireBtn5 mx-2">Freelancer.com</a>
            			</div>
            		</div>
 
@@ -224,7 +194,36 @@
 <!-- ABOUT ME SECTION MARKUP ENDS TO HERE -->
 
                      
-
+    <!-- MY SUCCESS RATE STARTS FROM HERE  -->
+    <main>
+      <div class="successArea">
+        <div class="container">
+          <div class="row" style="padding: 10% 0;">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+              <span class="successIcon"><i class="fas fa-check-circle"></i></span>
+             <span class="successRate">71</span><span class="plusSign">+</span>
+              <h2 class="subjectName">Project Done</h2>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 col-sm-10 text-center">
+              <span class="successIcon"><i class="fas fa-medal"></i></span>
+              <span id="countRate" class="successRate">7</span>
+              <h2 class="subjectName">Award Win</h2>
+            </div> -->
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+              <span class="successIcon"><i class="fas fa-smile"></i></span>
+           <span class="successRate">67</span><span class="plusSign">+</span>
+              <h2 class="subjectName">Happy Clients</h2>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+              <span class="successIcon"><i class="fas fa-star"></i></span>
+             <span class="successRate">59</span><span class="plusSign">+</span>
+              <h2 class="subjectName">Positive Ratting</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     <!-- MY SUCCESS RATE ENDS TO HERE  -->
 
                        <!-- SERVICES SECTION MARKUP STARTS FROM HERE -->
  <section class="services aboutSection" id="services">
@@ -273,11 +272,19 @@
 
 
 
-               <!-- PORTFOLIO SECTION DESIGN STARTS FROM HERE -->
+<!-- PORTFOLIO SECTION DESIGN STARTS FROM HERE -->
 <section class="portfolio aboutSection" id="portfolio">
- <h1 class="sectionTitle mb-5">My<span id="Sectitle"> Portfolio</span></h1><br>
+ <h1 class="sectionTitle mb-5">My<span id="Sectitle"> Portfolio</span></h1>
+                   <div class="container">
+                     <div class="porfolioControlBtn text-center">
+                     <span id="webDevelopmentBtn" class="activeClass">Web Development</span>
+                    <span id="webDesignBtn" class="hireBtn">Web Design</span>
+
+                     </div>
+                   </div><br><br>
+
   <div class="container">
-    <div class="box-container">
+    <div id="webDesignPortfolio" class="box-container" style="display: none;">
       <div class="box">
         <img src="assets/images/portfolio/p1.png" alt="">
           <div class="content">
@@ -351,7 +358,21 @@
         </div>
      </div>
 
+     <div id="webDevPortfolio" class="box-container">
+       <!-- <h1>Web Dev</h1> -->
 
+        <div class="box">
+         <img src="assets/images/webDev/dev1.png" alt="">
+           <div class="content">
+            <br>
+            <br>
+              <h3 id="projectTitle2">Project 01</h3>
+              <br>
+             <a href="https://foodvalley01.000webhostapp.com/" class="hireBtn ml-5" target="blank" style="margin-right: 15px;">Live <i class="fas fa-eye px-2"></i></a>
+            <a href="https://github.com/MHRafix/foodvalley01" class="hireBtn" target="blank">Code <i class="fas fa-code"></i></a>
+            </div>
+        </div>
+     </div>
 
   </div>
 
@@ -360,14 +381,23 @@
 
 
 
-
                        <!-- OUR TEAM SECTION MARKUP STARTS FROM HERE -->
 
                        <!-- OUR TEAM SECTION MARKUP ENDS TO HERE -->
+                      
+                    
 
 
 	<!-- BOOTSTRAP JS CDN INCLUDE HERE -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	<script src="assets/js/index.js"></script>
+                        <script>
+                      $(document).ready(function(){
+                        $('.successRate').counterUp({
+                          delay: 10,
+                          time: 1500
+                        });
+                      });
+                      </script>
 </body>
 </html>
